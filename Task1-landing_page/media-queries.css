@@ -1,0 +1,210 @@
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 14px;
+    }
+
+    header,
+    .more-content,
+    footer .top,
+    footer .bottom,
+    .middle {
+        padding: 0 3rem;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    .primary-heading {
+        font-size: 2.5rem;
+    }
+
+    .text-section {
+        padding: 1.5rem 4rem;
+    }
+
+    .more-movies-container {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 2.5rem;
+    }
+
+    .sm_poster {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 12px;
+    }
+
+    header {
+        height: 75px;
+    }
+
+    header,
+    .more-content,
+    footer .top,
+    footer .bottom,
+    .middle {
+        padding: 0 2rem;
+    }
+
+    .nav-links a,
+    .footer-links a,
+    .middle-left a {
+        padding: 2.5rem 1rem;
+    }
+
+    .primary-content {
+        flex-direction: column;
+    }
+
+    .text-section div:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        margin-bottom: 5rem;
+    }
+
+    .text-section div {
+        padding: 1rem 3rem 0 3rem;
+    }
+
+    .primary-heading {
+        font-size: 3.5rem;
+        flex: 1;
+    }
+
+    .watch-btn {
+        width: 100%;
+        flex: 0.7;
+        margin-top: 0;
+    }
+
+    .lg-poster-container {
+        width: calc(100vw - 6rem);
+    }
+
+    .more-content {
+        margin: 5rem 0;
+    }
+
+    .more-movies-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sm_poster {
+        height: 450px;
+    }
+
+    .more-movies-container img:nth-child(2),
+    .more-movies-container img:nth-child(4),
+    .more-movies-container img:nth-child(6) {
+        justify-self: end;
+    }
+
+    .middle-left {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .middle-left a {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        overflow-x: hidden;
+    }
+    .fa-bars {
+        display: block !important;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    header,
+    .more-content,
+    footer .top,
+    footer .bottom,
+    .middle {
+        padding: 0 1.5rem;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    .lg-poster-container {
+        width: 100vw;
+    }
+
+    .primary-heading {
+        font-size: 2rem;
+        flex: 1;
+    }
+
+    .watch-btn {
+        width: min-content;
+        flex: 0.6;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    .text-section div {
+        padding: 1rem 1.5rem 0 1.5rem;
+    }
+
+    .text-section div:first-child {
+        margin-bottom: 2rem;
+    }
+
+    .more-content {
+        margin: 3rem 0;
+    }
+
+    .more-content h1 {
+        margin-bottom: 3rem;
+    }
+
+    .more-movies-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .sm_poster {
+        width: 100%;
+        height: auto;
+    }
+
+    .sm_poster:hover {
+        transform: none;
+    }
+
+    .more-movies-container img {
+        justify-self: center;
+    }
+
+    footer {
+        margin-top: 5rem;
+    }
+
+    .bottom p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
