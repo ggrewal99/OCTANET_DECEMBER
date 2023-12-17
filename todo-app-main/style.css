@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color-light: #fff;
+    --input--font-color: hsl(236, 9%, 61%);
+    --list-font-color: hsl(235, 19%, 35%);
+    --font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 6rem 35rem;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family) !important;
+    position: relative;
+}
+
+.img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100vw;
+    height: max-content;
+}
+
+.img-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 35vh;
+    object-position: top left;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--font-color-light);
+    letter-spacing: 1rem;
+    margin-bottom: 4rem;
+}
+
+.main-container * {
+    font-size: 1.3rem !important;
+}
+
+.input-container {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.input-container input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex: 0.9;
+    padding: 1rem;
+    color: var(--input--font-color) !important;
+    font-family: var(--font-family);
+}
+
+input[type="radio"] {
+    height: 25px !important;
+    flex: 0.05;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.input-container button {
+    flex: 0.05;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-radius: 0 5px 5px 0;
+}
+
+.input-container button:hover {
+    cursor: pointer;
+}
+
+.list-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    box-shadow: 0px 3px 16px -2px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 0px 3px 16px -2px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 3px 16px -2px rgba(0, 0, 0, 0.43);
+}
+
+.item {
+    display: flex;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    align-items: center;
+    padding-left: 0.5rem;
+    border-bottom: 1px solid gray;
+    font-family: var(--font-family) !important;
+    color: var(--list-font-color);
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item-name {
+    flex: 0.9;
+    padding: 1rem;
+}
+
+.item-completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.remove-btn {
+    background-color: transparent;
+    border: none;
+    flex: 0.05;
+    color: rgba(255, 0, 0, 0.719);
+    opacity: 0;
+    visibility: none;
+    transition: all 0.2s;
+}
+
+.remove-btn:hover {
+    cursor: pointer;
+}
+
+.empty-text {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.list-container footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.list-container footer * {
+    font-size: 1rem !important;
+}
+
+.list-container footer p,
+.clear-btn {
+    color: var(--input--font-color);
+}
+
+.clear-btn {
+    background-color: transparent;
+    border: none;
+    font-family: var(--font-family);
+}
+
+.clear-btn:hover,
+.filter-group label:hover {
+    cursor: pointer;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.filter-group input {
+    display: none;
+}
+
+.filter-group label:hover {
+    cursor: pointer;
+}
+
+.filter-group input:checked + label {
+    color: hsl(220, 98%, 61%);
+}
+
+.checkbox-container {
+    flex: 0.05;
+    display: flex;
+    justify-content: center;
+}
+
+.item input[type="checkbox"] {
+    appearance: none;
+    border: 2px solid rgba(128, 128, 128, 0.3);
+    height: 25px !important;
+    width: 25px !important;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.item input[type="checkbox"]:checked {
+    background: linear-gradient(
+        to right,
+        hsl(192, 100%, 67%),
+        hsl(280, 87%, 65%)
+    );
+    border: 2px solid hsl(280, 87%, 65%);
+}

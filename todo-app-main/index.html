@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo | Frontend Mentor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/513080e5af.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="img-container">
+        <img src="assets/images/bg-desktop-light.jpg" alt="">
+    </div>
+    <header class="topbar">
+        <h1>TODO</h1>
+        <i class="fa-solid fa-moon fa-2xl"></i>
+    </header>
+
+    <div class="main-container">
+        <div class="input-container">
+            <input type="radio" id="input-radio" disabled>
+            <input type="text" placeholder="Create a new todo..." id="item-input">
+            <button class="add-btn"><i class="fa-solid fa-plus fa-xl"></i></button>
+        </div>
+
+        <div class="list-container">
+            <div class="list-items">
+                <p class="empty-text">Nothing to show here</p>
+            </div>
+            <footer>
+                <p><span class="item-counter">0 </span>items left</p>
+                <div class="filter-group">
+                    <input type="radio" id="all" name="filter" checked>
+                    <label for="all">All</label>
+                    <input type="radio" id="active" name="filter">
+                    <label for="active">Active</label>
+                    <input type="radio" id="completed" name="filter">
+                    <label for="completed">Completed</label>
+                </div>
+                <button class="clear-btn">Clear Completed</button>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
